@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16sp">
+
+        <TextView
+            android:id="@+id/text_IDPinjam"
+            android:fontFamily="@font/poppins_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:text="ID Peminjaman"
+            />
+
+        <TextView
+            android:id="@+id/text_TanggalPinjam"
+            android:fontFamily="@font/poppins_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_below="@id/text_IDPinjam"
+            android:text="Tanggal"
+            />
+
+        <TextView
+            android:id="@+id/text_IDSales"
+            android:layout_marginTop="30sp"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_below="@id/text_TanggalPinjam"
+            android:text="Sales"
+            />
+
+        <TextView
+            android:id="@+id/data_namaSales"
+            android:fontFamily="@font/poppins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_below="@id/text_IDSales"
+
+            android:text="Aufan Abdul"
+            />
+        <TextView
+            android:id="@+id/data_namaAgency"
+            android:fontFamily="@font/poppins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_below="@id/text_IDAgency"
+            android:text="Kopegtel Palapa"
+            />
+
+        <TextView
+            android:id="@+id/data_platMobil"
+            android:fontFamily="@font/poppins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_below="@id/text_IDMobil"
+            android:text="B 2737 SRM"
+            />
+
+        <TextView
+            android:id="@+id/data_namaLokasi"
+            android:fontFamily="@font/poppins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_below="@id/text_IDLokasi"
+            android:text="Lingkar Manunggal"
+            />
+
+        <TextView
+            android:id="@+id/text_IDAgency"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_below="@id/tv_dataIdSales"
+            android:text="Agency"
+            />
+
+        <TextView
+            android:id="@+id/text_IDMobil"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_below="@id/tv_dataIdAgency"
+            android:text="Mobil"
+            />
+
+        <TextView
+            android:id="@+id/text_IDLokasi"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_below="@id/tv_dataIdMobil"
+            android:text="Lokasi"
+            />
+
+        <TextView
+            android:id="@+id/tv_dataIdPeminjaman"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65sp"
+            android:layout_toRightOf="@id/text_IDPinjam"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:text="PJ001"
+            />
+        <TextView
+            android:id="@+id/tv_dataTanggal"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_dataIdPeminjaman"
+            android:layout_toRightOf="@id/text_TanggalPinjam"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="120sp"
+            android:text="2023-07-19"
+            />
+
+        <TextView
+            android:id="@+id/tv_dataIdSales"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_marginStart="10sp"
+            android:layout_toRightOf="@+id/data_namaSales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_IDSales"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:text="SPX"
+            />
+
+        <TextView
+            android:id="@+id/tv_dataIdAgency"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_marginStart="10sp"
+            android:layout_toRightOf="@+id/data_namaAgency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_IDAgency"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:text="SJU"
+            />
+
+        <TextView
+            android:id="@+id/tv_dataIdMobil"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_marginStart="10sp"
+            android:layout_toRightOf="@+id/data_platMobil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_IDMobil"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:text="MBL01"
+            />
+
+        <TextView
+            android:id="@+id/tv_dataIdLokasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_toRightOf="@+id/data_namaLokasi"
+            android:layout_below="@id/text_IDLokasi"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="LK001"
+            />
+
+        <TextView
+            android:id="@+id/tv_dataJamPinjam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_dataIdLokasi"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="jam"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_dataStatusPinjam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_dataJamPinjam"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="jam"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_dataKetPinjam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_dataStatusPinjam"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="jam"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginRight="10sp"
+    android:layout_marginLeft="10sp"
+    android:layout_marginBottom="10sp"
+    android:padding="5sp"
+    app:cardElevation="8sp"
+    app:cardCornerRadius="4sp">
+
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginBottom="10sp"
+        android:layout_marginTop="15sp"
+        android:padding="10sp"
+        app:cardElevation="8sp"
+        app:cardCornerRadius="4sp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16sp">
+
+            <TextView
+                android:id="@+id/tv_id_pengembalian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="PJ001"
+                android:visibility="gone"/>
+
+
+            <TextView
+                android:id="@+id/tv_tanggalPengembalian"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="2023-01-23"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_plat_mobilPengembalian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="DR 2755 SRM"
+                android:fontFamily="@font/poppins_bold"
+                android:textStyle="bold"
+                android:layout_below="@+id/tv_tanggalPengembalian"/>
+
+            <TextView
+                android:id="@+id/tv_nama_agencyPengembalian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Agency"
+                android:textSize="14sp"
+                android:layout_below="@+id/tv_plat_mobilPengembalian"/>
+
+            <TextView
+                android:id="@+id/tv_nama_salesPengembalian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agusman"
+                android:fontFamily="@font/poppins_medium"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_below="@+id/tv_nama_agencyPengembalian"/>
+
+            <TextView
+                android:id="@+id/tv_jam_pengembalian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="08:36:52"
+                android:fontFamily="@font/poppins_medium"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_toRightOf="@+id/tv_tanggalPengembalian"
+                android:layout_marginStart="150sp"/>
+
+            <TextView
+                android:id="@+id/tv_nama_lokasiPengembalian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lingkar Manunggal"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="16sp"
+                android:layout_below="@+id/tv_nama_salesPengembalian"
+                android:layout_toRightOf="@+id/tv_status_pengembalianMobil"
+                android:layout_marginStart="70sp"/>
+
+            <TextView
+                android:id="@+id/tv_status_pengembalianMobil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Berhasil"
+                android:padding="5sp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:background="@drawable/badge_success"
+                android:layout_below="@+id/tv_nama_salesPengembalian"/>
+
+            <TextView
+                android:id="@+id/tv_keterangan_statusPengembalian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobil Parkir"
+                android:textSize="16sp"
+                android:layout_below="@+id/tv_nama_lokasiPengembalian"
+                android:layout_toRightOf="@+id/tv_status_pengembalian"
+                android:layout_marginStart="210sp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="10sp"/>
+
+            <TextView
+                android:id="@+id/tv_keterangan_kegiatanPengembalian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ket Kegiatan"
+                android:visibility="gone"
+                android:textSize="16sp"
+                android:layout_below="@+id/tv_nama_salesPengembalian"
+                android:layout_toRightOf="@+id/tv_status_pengembalian"
+                android:layout_marginStart="160sp"
+                android:layout_marginTop="10sp"/>
+
+            <TextView
+                android:id="@+id/tv_bukti_kegiatanPengembalian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bukti Kegiatan"
+                android:visibility="gone"
+                android:textSize="16sp"
+                android:layout_below="@+id/tv_nama_salesPengembalian"
+                android:layout_toRightOf="@+id/tv_status_pengembalian"
+                android:layout_marginStart="160sp"
+                android:layout_marginTop="10sp"/>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

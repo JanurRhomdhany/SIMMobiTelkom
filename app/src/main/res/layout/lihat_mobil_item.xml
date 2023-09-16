@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginRight="10sp"
+    android:layout_marginLeft="10sp"
+    android:layout_marginBottom="10sp"
+    android:padding="5sp"
+    app:cardElevation="8sp"
+    app:cardCornerRadius="4sp">
+
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginBottom="10sp"
+        android:layout_marginTop="15sp"
+        android:padding="5sp"
+        app:cardElevation="8sp"
+        app:cardCornerRadius="4sp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8sp">
+
+            <TextView
+                android:id="@+id/tv_id_mobil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="MBL01"
+                />
+
+            <TextView
+                android:id="@+id/tv_plat_mobil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_id_mobil"
+                android:text="DR 2755 SRM"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_status_mobil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tersedia"
+                android:padding="5sp"
+                android:layout_below="@id/tv_id_mobil"
+                android:layout_marginStart="180sp"
+                android:background="@color/black"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

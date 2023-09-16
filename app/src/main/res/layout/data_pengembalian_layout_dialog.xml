@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16sp">
+
+        <TextView
+            android:id="@+id/tv_dataIdPengembalian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="PJ001"
+            />
+        <TextView
+            android:id="@+id/tv_dataTanggalKembali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_dataIdPengembalian"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="2023-07-19"
+            />
+
+        <TextView
+            android:id="@+id/tv_dataIdSalesKembali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_dataTanggalKembali"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="SPX"
+            />
+
+        <TextView
+            android:id="@+id/tv_dataIdAgencyKembali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_dataTanggalKembali"
+            android:textSize="18sp"
+            android:layout_marginLeft="30sp"
+            android:layout_toRightOf="@+id/tv_dataIdSalesKembali"
+            android:textColor="@color/black"
+            android:text="SJU"
+            />
+
+        <TextView
+            android:id="@+id/tv_dataIdMobilKembali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_dataIdSalesKembali"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="MBL001"
+            />
+
+        <TextView
+            android:id="@+id/tv_dataIdLokasiKembali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_dataIdMobilKembali"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="LK001"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_ketKegiatanPengembalian"
+            android:layout_below="@id/tv_dataIdLokasiKembali"
+            android:hint="Keterangan Kegiatan..."/>
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
+            android:layout_marginBottom="20sp"
+            android:layout_marginTop="20sp"
+            android:id="@+id/iv_dataBuktiKegiatanKembali"
+            android:layout_below="@id/tv_ketKegiatanPengembalian"
+            android:background="#DFDFDF"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_buktiKegiatan"/>
+
+        <Button
+            android:id="@+id/btn_pilihGambar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Bukti"
+            android:textColor="#fff"
+            android:textSize="10sp"
+            android:layout_below="@+id/tv_ketKegiatanPengembalian"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="50sp"
+            android:layout_marginRight="20sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_dataJamPengembalian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_dataIdLokasiKembali"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="jam"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_dataStatusPengembalian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_dataJamPengembalian"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="jam"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_dataKetStatusPengembalian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_dataStatusPengembalian"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="jam"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginRight="10sp"
+    android:layout_marginLeft="10sp"
+    android:layout_marginBottom="10sp"
+    android:padding="5sp"
+    app:cardElevation="8sp"
+    app:cardCornerRadius="4sp">
+
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginBottom="10sp"
+        android:layout_marginTop="15sp"
+        android:padding="10sp"
+        app:cardElevation="8sp"
+        app:cardCornerRadius="4sp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16sp">
+
+            <TextView
+                android:id="@+id/tv_id_peminjaman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="PJ001"
+                android:visibility="gone"/>
+
+
+            <TextView
+                android:id="@+id/tv_tanggal"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="2023-01-23"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_plat_mobil"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="DR 2755 SRM"
+                android:textStyle="bold"
+                android:layout_below="@+id/tv_tanggal"/>
+
+            <TextView
+                android:id="@+id/tv_nama_agency"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agency"
+                android:textSize="14sp"
+                android:layout_below="@+id/tv_plat_mobil"/>
+
+            <TextView
+                android:id="@+id/tv_nama_sales"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_height="wrap_content"
+                android:text="Agusman"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_below="@+id/tv_nama_agency"/>
+
+            <TextView
+                android:id="@+id/tv_jam_pinjam"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="08:36:52"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_toRightOf="@+id/tv_tanggal"
+                android:layout_marginStart="150sp"/>
+
+            <TextView
+                android:id="@+id/tv_nama_lokasi"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lingkar Manunggal"
+                android:textSize="16sp"
+                android:layout_below="@+id/tv_nama_sales"
+                android:layout_toRightOf="@+id/tv_status_peminjaman"
+                android:layout_marginStart="50sp"/>
+
+            <TextView
+                android:id="@+id/tv_status_peminjaman"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:text="Diterima"
+                android:padding="5sp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:background="@drawable/border_background"
+                android:layout_below="@+id/tv_nama_sales"/>
+
+            <TextView
+                android:id="@+id/tv_ketPeminjaman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Mobil Jalan"
+                android:textSize="16sp"
+                android:layout_below="@+id/tv_nama_lokasi"
+                android:layout_toRightOf="@+id/tv_status_peminjaman"
+                android:layout_marginStart="130sp" />
+
+            <TextView
+                android:id="@+id/tv_idLokasiPeminjaman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30sp"
+                android:text="LK001"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_idAgencyPeminjaman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30sp"
+                android:text="SJU"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_idMobilPeminjaman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30sp"
+                android:text="MBL03"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_idSales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30sp"
+                android:text="SPAGAN"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_buktiKegiatanPeminjaman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30sp"
+                android:text="bukti"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:visibility="gone"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_kembaliMobil"
+                android:text="Kembalikan Mobil"
+                android:background="@drawable/custom_button_enabled"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_below="@+id/tv_ketPeminjaman"
+                android:layout_marginTop="15sp"/>
+
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

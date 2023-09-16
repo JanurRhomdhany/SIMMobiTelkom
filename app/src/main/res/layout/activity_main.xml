@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MainActivity"
+    android:windowSoftInputMode="adjustPan">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/tv_loginSales"
+        android:layout_height="wrap_content"
+        android:text="Login Sales"
+        android:layout_marginTop="50sp"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/tv_simMobi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="SIM Mobi Telkom"
+        android:layout_below="@+id/tv_loginSales"
+        android:gravity="center"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#000"/>
+
+    <ImageView
+        android:id="@+id/logoApp"
+        android:layout_width="196dp"
+        android:layout_height="175dp"
+        android:layout_below="@+id/tv_simMobi"
+        android:layout_centerInParent="true" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40sp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:id="@+id/idSales_layout"
+        android:layout_below="@+id/logoApp">
+        
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="ID Sales"
+            android:id="@+id/et_idSales"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_below="@id/idSales_layout"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:layout_marginTop="10sp"
+        android:id="@+id/passSales_layout"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="#000">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:id="@+id/et_passSales"
+            android:fontFamily="@font/poppins_medium"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="#fff"
+        android:background="@drawable/custom_button_enabled"
+        android:layout_below="@+id/passSales_layout"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:fontFamily="@font/poppins_bold"
+        />
+
+    <TextView
+        android:id="@+id/tv_registerAkun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginRight="30sp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:cursorVisible="true"
+        android:fontFamily="@font/poppins_light"
+        android:text="Belum punya akun? Silahkan Daftar"
+        android:textColor="#757575" />
+
+</RelativeLayout>

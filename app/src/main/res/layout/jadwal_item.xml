@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginRight="10sp"
+    android:layout_marginLeft="10sp"
+    android:layout_marginBottom="10sp"
+    android:padding="5sp"
+    app:cardElevation="8sp"
+    app:cardCornerRadius="4sp">
+
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:padding="10sp"
+        app:cardElevation="8sp"
+        app:cardCornerRadius="4sp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16sp">
+
+            <TextView
+                android:id="@+id/tv_tanggalJadwal"
+                android:fontFamily="@font/poppins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="2023-01-23"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_platMobil"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/tv_tanggalJadwal"
+                android:text="DR 2755 SRM"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_namaAgency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_platMobil"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Agency"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_namaLokasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_platMobil"
+                android:layout_marginStart="30sp"
+                android:text="Lingkar Manunggal"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_idLokasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30sp"
+                android:text="LK001"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_idAgency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30sp"
+                android:text="SJU"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_idMobil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30sp"
+                android:text="MBL03"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:visibility="gone"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_ambilMobil"
+                android:text="Pinjam Mobil"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_below="@+id/tv_namaAgency"
+                android:background="@drawable/custom_button_enabled"
+                android:layout_marginTop="5sp"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>
